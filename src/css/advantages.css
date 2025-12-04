@@ -5,8 +5,6 @@
   padding: 64px 32px;
 }
 
-.advantages-block-text {
-}
 .advantages-subtitle {
   margin-bottom: 12px;
   font-family: 'Fira Sans', sans-serif;
@@ -32,8 +30,7 @@
   line-height: 1.6;
   color: #030a06;
 }
-.advantages-block-list {
-}
+
 .advantages-list {
   display: flex;
   flex-direction: column;
@@ -69,4 +66,7 @@
 }
 
 @media screen and (min-width: 1158px) {
+  .advantages-list {
+    flex-direction: row;
+  }
 }
