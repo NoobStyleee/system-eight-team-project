@@ -112,10 +112,15 @@
     font-size: 48px;
   }
 
+  .advantages-item {
+    display: unset;
+  }
+
   .advantages-item-title {
     max-width: unset;
     font-size: 32px;
-    height: 34px;
+    height: 90px;
+    margin-bottom: 24px;
   }
   .advantages-item-text {
     max-width: unset;
@@ -130,5 +135,8 @@
 
   .advantages-block-text {
     max-width: 768px;
+  }
+  .advantages-list .advantages-item:nth-child(3) .advantages-item-title {
+    height: 90px;
   }
 }
