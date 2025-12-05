@@ -12,23 +12,109 @@
     <div class="advantages-block-list">
       <ul class="advantages-list">
         <li class="advantages-item">
-          <picture class="advantages-picture"></picture>
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ../img/advantages-desktop-1@1x.jpg 1x,
+                ../img/advantages-desktop-1@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/advantages-tablet-1@1x.jpg 1x,
+                ../img/advantages-tablet-1@2x.jpg 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ../img/advantages-mobile-1@1x.jpg 1x,
+                ../img/advantages-mobile-1@2x.jpg 2x
+              "
+            />
+            <img
+              class="advantages-picture"
+              src="../img/advantages-mobile-1@1x.jpg"
+              alt="Чому обрати нас?"
+              loading="lazy"
+            />
+          </picture>
           <h2 class="advantages-item-title">Стійкість та екологічність</h2>
           <p class="advantages-item-text">
             Виготовлені з органічної бавовни та переробленого пластику.
           </p>
         </li>
         <li class="advantages-item">
-          <picture class="advantages-picture"></picture>
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ../img/advantages-desktop-2@1x.jpg 1x,
+                ../img/advantages-desktop-2@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/advantages-tablet-2@1x.jpg 1x,
+                ../img/advantages-tablet-2@2x.jpg 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ../img/advantages-mobile-2@1x.jpg 1x,
+                ../img/advantages-mobile-2@2x.jpg 2x
+              "
+            />
+            <img
+              class="advantages-picture"
+              src="../img/advantages-mobile-2@1x.jpg"
+              alt="Стійкість та екологічність"
+              loading="lazy"
+            />
+          </picture>
           <h2 class="advantages-item-title">Міцність і довговічність</h2>
           <p class="advantages-item-text">
             Наші сумки мають посилені шви для тривалого використання.
           </p>
         </li>
-        <li class="advantages-item">
-          <picture class="advantages-picture"></picture>
-          <h2 class="advantages-item-title">Стильний та сучасний дизайн</h2>
-          <p class="advantages-item-text">
+        <li class="advantages-item advantages-accent">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ../img/advantages-desktop-3@1x.jpg 1x,
+                ../img/advantages-desktop-3@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/advantages-tablet-3@1x.jpg 1x,
+                ../img/advantages-tablet-3@2x.jpg 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ../img/advantages-mobile-3@1x.jpg 1x,
+                ../img/advantages-mobile-3@2x.jpg 2x
+              "
+            />
+            <img
+              class="advantages-picture"
+              src="../img/advantages-mobile-3@1x.jpg"
+              alt="Стійкість та екологічність"
+              loading="lazy"
+            />
+          </picture>
+          <h2 class="advantages-item-title advantages-accent">
+            Стильний та сучасний дизайн
+          </h2>
+          <p class="advantages-item-text advantages-accent">
             Мінімалістичні моделі в обмежених серіях для кожного стилю.
           </p>
         </li>
