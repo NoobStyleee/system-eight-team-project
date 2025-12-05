@@ -1,3 +1,58 @@
+.about {
+    background-color: #ebf8ed;
+    background-image: url('../img/about-mobile@1x.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    max-width: 320px;
+    height: 348px;
+}
+
+
+@media (min-resolution: 192dpi) {
+    .about {
+        background-image: url('../img/about-mobile@2x.jpg')
+    }
+}
+
+.about-text-one {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+}
+
+.about-text-two {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #fff;
+}
+
+.about-description {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 768px) {
 }
 

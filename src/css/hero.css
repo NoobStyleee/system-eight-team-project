@@ -67,6 +67,10 @@
     margin-bottom: 0;
     }
 
+    .dot {
+        display: none;
+    }
+
     .hero-wrapper {
        flex-direction: row;
        justify-content: space-between;
