@@ -1,6 +1,7 @@
 
 .hero {
     padding-top: 64px;
+    padding-bottom: 64px;
     background-color: #ebf8ed;
 }
 
@@ -17,7 +18,7 @@
    line-height: 1.2;
    letter-spacing: 0.01em;
    color: #030a06;
-   margin: 0 0 20px 0;
+   margin-bottom: 20px;
 }
 
 .hero-wrapper-text {
@@ -62,15 +63,23 @@
     padding-top: 32px;
    }
 
+    .hero-text {
+    margin-bottom: 0;
+    }
+
     .hero-wrapper {
        flex-direction: row;
        justify-content: space-between;
        align-items: flex-start;
-       gap: 24px;
+       margin-bottom: 24px;
     }
 
     .hero-wrapper-text {
        gap: 32px;
+    }
+
+    .hero-desription {
+        font-size: 18px;
     }
 
     .hero-link {
@@ -89,7 +98,6 @@
 
 @media screen and (min-width: 1440px) {
     .hero-wrapper {
-        gap: 32px;
         max-width: 1312px;
         height: 201px;
     }
@@ -97,11 +105,6 @@
     .hero-text {
         font-size: 56px;
         max-width: 640px;
-    }
-
-    
-    .hero-desription {
-        font-size: 18px;
     }
 
     .hero-img {
