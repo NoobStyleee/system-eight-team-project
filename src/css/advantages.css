@@ -79,10 +79,6 @@
     flex-shrink: 0;
   }
 
-  .advantages-item-title {
-    height: 68px;
-  }
-
   .advantages-item {
     max-width: 340px;
     display: flex;
@@ -102,8 +98,8 @@
     font-size: 24px;
   }
 
-  .advantages-list .advantages-item:nth-child(3) .advantages-item-title {
-    height: 34px;
+  .advantages-list .advantages-item:nth-child(2) .advantages-item-title {
+    height: 68px;
   }
 }
 
@@ -136,7 +132,7 @@
   .advantages-block-text {
     max-width: 768px;
   }
-  .advantages-list .advantages-item:nth-child(3) .advantages-item-title {
-    height: 90px;
+  .advantages-list .advantages-item:nth-child(2) .advantages-item-title {
+    height: unset;
   }
 }
