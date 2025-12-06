@@ -1,5 +1,162 @@
+/* #region footer mobile */
+
+.footer {
+background-color: #75D281;
+padding: 48px 0;
+
+width: 100%;
+}
+
+.footer-nav-container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.footer-logo-container {
+
+}
+
+.footer-logo-icon {
+width: 280px;
+    height: 121px;
+}
+
+.footer-logo-link {
+    display: inline-block;
+    
+}
+
+.footer-nav-list {
+display: flex;
+flex-direction: column;
+gap: 32px;
+justify-content: center;
+align-items: center;
+}
+
+.footer-list-item {
+
+}
+
+.footer-list-link {
+font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #030A06;
+}
+
+.footer-social-list {
+display: flex;
+gap: 12px;
+justify-content: center;
+align-items: center;
+}
+
+.social-list-item {
+
+}
+
+.footer-social-link {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+width: 32px;
+height: 32px; */
+display: inline-block;
+}
+
+.social-icon-footer {
+    width: 32px;
+        height: 32px;
+}
+
+.contacts {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(3, 10, 6, 0.15);
+}
+
+.footer-contacts-list {
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+
+.footer-contacts-item {
+
+}
+
+.footer-contacts-link {
+
+}
+
+
+
+/* #endregion footer mobile */
+
+
 @media screen and (min-width: 768px) {
+
+.footer {
+    padding: 64px 0;
+
+}
+
+.footer-nav-container {
+    gap: 32px;
+    margin-bottom: 24px;
+}
+
+    .footer-nav-list {
+    flex-direction: row;
+}
+
+.footer-contacts-list {
+    flex-direction: row;
+    gap: 32px;
+}
+
+.contacts {
+    gap: 16px;
+    padding-top: 16px;
+}
+
+.footer-logo-icon {
+    width: 164px;
+        height: 70px;
+}
+
+.social-icon-footer {
+width: 40px;
+height: 40px;
+}
+
 }
 
 @media screen and (min-width: 1440px) {
+    .footer {
+    padding: 80px 0;
+    } 
+                
+    .footer-nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+    
+    margin-bottom: 52px;
+    }
+
+        .social-icon-footer {
+            width: 24px;
+            height: 24px;
+        } 
+
 }
