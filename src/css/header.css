@@ -2,39 +2,108 @@
 .header-address {
   display: none;
 }
-.header-conteyner {
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #75d281;
-  padding: 0 20px 0 16px;
-}
-.header-logo {
-  cursor: pointer;
-  padding: 14px 0;
+  padding: 8px 12px 8px 20px;
 }
 .header-logo-svg {
   fill: #030a06;
 }
 .btn-burger {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 48px;
+  height: 48px;
+  display: block;
   background: transparent;
   border: none;
-  padding: 0;
   fill: #030a06;
-  cursor: pointer;
 }
+/* #menu */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #75d281;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.menu-container {
+  display: flex;
+  flex-direction: column;
+}
+.menu-header {
+  padding: 8px 12px 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-menu-close {
+  border: none;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+}
+.menu-nav {
+  padding: 32px 20px;
+  margin-bottom: 32px;
+}
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.menu-link {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #030a06;
+  font-style: normal;
+}
+.menu-address {
+  padding: 32px 16px 0px;
+}
+.menu-list-address {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+/* #endmenu */
 @media screen and (min-width: 768px) {
-  .header-conteyner {
-    padding: 0px 16px 0px 32px;
+  .header-container {
+    padding: 8px 16px 8px 32px;
+  }
+  .menu-header {
+    padding: 8px 16px 8px 32px;
+  }
+  .menu-nav {
+    padding: 32px;
+    margin-bottom: 0;
+  }
+  .menu-address {
+    padding: 32px 32px 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .header-conteyner {
-    padding: 0px 64px;
+  .header-container {
+    padding: 13.3px 64px;
+  }
+  .header-logo-svg {
+    width: 106px;
+    height: 45px;
   }
   .header-list {
     display: flex;
@@ -47,6 +116,7 @@
     line-height: 1.6;
     color: #030a06;
   }
+
   .header-address {
     display: flex;
   }
@@ -56,14 +126,35 @@
   .header-nav {
     display: block;
   }
-  .header-link {
-    padding: 23px 0;
-    cursor: pointer;
-  }
   .header-list {
     display: flex;
     gap: 32px;
     cursor: pointer;
+  }
+  .header-item {
+    border-bottom: 1px solid transparent;
+    height: 26px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-link {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #030a06;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-item:hover,
+  .header-item:focus {
+    border-bottom-color: #030a06;
+  }
+  .header-item:active {
+    border-bottom-color: #3ac04c;
+  }
+  .header-item:active .header-link,
+  .header-link:active {
+    color: #3ac04c;
   }
   .header-list-address {
     display: flex;
@@ -76,7 +167,43 @@
     line-height: 1.6;
     color: #030a06;
     font-style: normal;
-    padding: 23px 0;
-    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    height: 26px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-item-address:hover,
+  .header-item-address:focus {
+    border-color: #030a06;
+  }
+  .header-tel {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #030a06;
+    font-style: normal;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-email {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #030a06;
+    font-style: normal;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-item-address:active {
+    border-bottom-color: #3ac04c;
+  }
+  .header-item-address:active .header-tel,
+  .header-tel:active {
+    color: #3ac04c;
+  }
+  .header-item-address:active .header-email,
+  .header-email:active {
+    color: #3ac04c;
   }
 }
