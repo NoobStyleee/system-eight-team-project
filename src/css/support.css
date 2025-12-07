@@ -1,5 +1,251 @@
-@media screen and (min-width: 768px) {
+.support {
+    background-color: #ebf8ed;
+    padding: 32px 0 32px;
 }
 
-@media screen and (min-width: 1440px) {
+.support .container {    
+    max-width: 320px;    
+
+}
+
+.form-title {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: #030a06;
+    max-width: 288px;
+    margin-bottom: 24px;
+}
+
+.form-text {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #030a06;
+    margin-bottom: 32px;
+}
+
+.form-field-wrapper {
+    margin-bottom: 24px;
+    max-width: 288px;
+    padding: 0;
+
+}
+
+.label-field {
+    display: block;
+    margin-bottom: 8px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #030a06;
+}
+
+.text-field,
+.comment-textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(3, 10, 6, 0.15);
+    border-radius: 6px;
+    outline: none;
+    color: #030a06;
+
+}
+
+.text-field {
+    padding: 8px 0 8px 12px;
+}
+
+.comment-textarea {
+    padding: 12px 0 12px 12px;
+    height: 180px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #030a06;
+}
+
+
+.form-btn {
+    border: 1px solid #030a06;
+    border-radius: 6px;
+    padding: 12px 24px;
+    width: 288px;
+    height: 50px;
+    background-color: #030a06;
+    margin-bottom: 24px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.form-btn:active {
+    background-color: #113916;
+    border-color: #113916;
+    opacity: 0.6;
+}
+
+
+
+.form .text-field:not(:placeholder-shown):invalid,
+.form .comment-textarea:not(:placeholder-shown):invalid {
+    border-color: #d64040;
+}
+
+.form .text-field:not(:placeholder-shown):valid,
+.form .comment-textarea:not(:placeholder-shown):valid {
+    border-color: #3ac04c;
+}
+
+.text-valid,
+.text-invalid {
+    display: none;
+}
+
+.form .text-field:not(:placeholder-shown):valid~.text-valid,
+.form .comment-textarea:valid:not(:placeholder-shown)~.text-valid {
+    display: block;
+}
+
+.form .text-field:not(:placeholder-shown):invalid~.text-invalid,
+.form .comment-textarea:invalid:not(:placeholder-shown)~.text-invalid {
+    display: block;
+}
+
+
+
+
+.form-img {
+    display: block;
+    width: 100%;
+    height: 428px;
+    min-height: 288px;
+    background-image: url("../img/support-mobile@1x.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    margin: 0;
+}
+
+
+@media (min-resolution: 192dpi) {
+    .form-img {
+        background-image: url("../img/support-mobile@2x.jpg");
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .support {
+        padding: 64px 0 64px;
+    }
+    .support .container {
+        max-width: 768px;
+        padding: 0 32px;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .form-text,
+    .form-field-wrapper,
+    .form-btn,
+    .form-img,
+    .form {
+        max-width: 100%;
+    }
+
+    .form-title {
+        max-width: 468px;
+    }
+
+    .form-img {
+        width: 704px;
+        background-image: url("../img/support-tablet@1x.jpg");
+    }
+
+    .form-btn {
+        width: 249px;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .form-img {
+        background-image: url("../img/support-tablet@2x.jpg");
+    }
+}
+
+
+
+@media only screen and (min-width: 1440px) {
+.support {
+        padding: 64px 0 64px;
+    }
+    .support .container {
+        max-width: 1440px;
+        width: 100%;
+        padding: 0 64px;
+    }
+
+    .support-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .form-wrapper {
+        width: 644px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .form-title {
+        font-size: 48px;
+        line-height: 1.2;
+        max-width: 644px;
+    }
+
+    .form-img {
+        width: 644px;
+        height: auto;
+        align-self: stretch;
+        background-image: url("../img/support-desktop@1x.jpg");
+    }
+
+    .form-btn {
+        width: 198px;
+        margin-bottom: 78px;
+    }
+
+    .form-btn:hover,
+    .form-btn:focus {
+        background-color: #030a06;
+        border-color: 1px #030a06;
+        opacity: 0.5;
+        outline: none;
+    }
+
+
+}
+
+@media only screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+    .form-img {
+        background-image: url("../img/support-desktop@2x.jpg");
+    }
 }
