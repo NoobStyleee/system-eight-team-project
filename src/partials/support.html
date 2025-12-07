@@ -1,3 +1,45 @@
-<section class="support">
-  <div class="container"></div>
+<section class="support section" id="support">
+  <div class="container support-container">
+
+    <div class="support-content">
+      <h2 class="support-title">
+        Залишились питання?<br />
+        Зв'яжіться з нами!
+      </h2>
+      <p class="support-text">Ми тут, щоб допомогти!</p>
+
+      <form class="support-form" name="support-form" autocomplete="off" novalidate>
+
+        <!-- NAME -->
+        <label class="support-field">
+          <span class="support-label">Ім'я</span>
+          <input class="support-input" type="text" name="username" placeholder="Іван" required minlength="5"
+            maxlength="64" />
+        </label>
+
+        <!-- EMAIL -->
+        <label class="support-field">
+          <span class="support-label">Електронна пошта</span>
+          <input class="support-input" type="email" name="email" placeholder="hello@ecotote.com" required
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" />
+        </label>
+
+        <!-- MESSAGE -->
+        <label class="support-field">
+          <span class="support-label">Повідомлення</span>
+          <textarea class="support-textarea" name="message" placeholder="Введіть своє повідомлення..."
+            maxlength="500"></textarea>
+        </label>
+
+        <button class="support-button" type="submit">Надіслати</button>
+      </form>
+    </div>
+
+    <!-- IMG 1x/2x -->
+    <div class="support-image-wrapper">
+      <img class="support-image" src="./images/support-bag-1x.jpg"
+        srcset="./images/support-bag-1x.jpg 1x, ./images/support-bag-2x.jpg 2x"
+        alt="Екосумка EcoTote на столі з ескізами" loading="lazy" />
+    </div>
+  </div>
 </section>
