@@ -1,5 +1,175 @@
+/* Support */
+
+.support {
+    padding: 64px 0;
+}
+
+.support-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 767px;
+    column-gap: 24px;
+}
+
+/* Левая колонка */
+.support-content {
+    width: 100%;
+    flex: 1 1 0;
+}
+
+/* Заголовок */
+
+.support-name-block {
+    padding-bottom: 32px;
+}
+
+
+.support-title {
+    font-family: "Comfortaa", sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 120%;
+        letter-spacing: 0.01em;
+        color: #030a06;
+        
+}
+
+/* Подзаголовок */
+.support-text {
+    font-family: "Fira Sans", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        color: #030a06;
+}
+
+/* Форма */
+
+ .support-form-block {
+    width: 644px;
+        height: 488px;
+}
+
+
+.support-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 644px;
+        height: 488px;
+}
+
+/* Поля */
+.support-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.support-label {
+    font-family: "Fira Sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #030a06;
+}
+
+/* Инпуты и textarea */
+.support-input {
+    border: 1px solid rgba(3, 10, 6, 0.15);
+        border-radius: 6px;
+        padding: 8px 12px;
+        width: 644px;
+        height: 42px;
+        background: rgba(3, 10, 6, 0.05);
+}
+
+
+.support-textarea {
+border: 1px solid rgba(3, 10, 6, 0.15);
+    border-radius: 6px;
+    padding: 12px;
+    width: 644px;
+    height: 180px;
+    background: rgba(3, 10, 6, 0.05);
+    resize: none;
+}
+
+.support-input::placeholder,
+.support-textarea::placeholder {
+    color: #b0b0b0;
+}
+
+.support-input:focus,
+.support-textarea:focus {
+    border-color: #111111;
+    background-color: #ffffff;
+}
+
+/* Кнопка */
+.support-button {
+    display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #030a06;
+        border-radius: 6px;
+        width: 198px;
+            height: 50px;
+        background-color: #030a06;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #fff;
+            padding: 12px 24px;
+            
+        
+}
+
+.support-button:hover,
+.support-button:focus-visible {
+            background-color: #030a06;
+                opacity: 0.5;
+                color: #FFFFFF;
+    
+}
+
+.support-button:active {
+            background-color: #113916;
+                opacity: 0.6;
+}
+
+.support-button:disabled {
+    background: #030a06;
+        opacity: 0.2;
+}
+
+
+/* Правая часть — изображение */
+.support-image-wrapper {
+    flex: 0 1 644px;
+        max-width: 100%;
+        
+}
+
+  .support-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 32px;
+      object-fit: cover;
+  }
+
 @media screen and (min-width: 768px) {
 }
 
 @media screen and (min-width: 1440px) {
 }
+
+
+
+
+
+
