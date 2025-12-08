@@ -1,28 +1,33 @@
 .assortment {
   background-color: #ebf8ed;
-  padding: 32px 0;
+  padding: 0 16px;
 }
 
 .assortment-conteiner {
-  padding: 0 16px;
+  padding: 32px 0;
 }
 
 .assortment-title {
   font-family: 'Comfortaa', sans-serif;
   font-weight: 700;
   font-size: 36px;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 
   line-height: 120%;
   letter-spacing: 0.01em;
   text-align: center;
   color: #030a06;
 }
-.assortment-card-bag img {
+.img-desktop {
   display: block;
   border-radius: 32px;
   width: 288px;
-  height: 345px;
+  margin-bottom: 16px;
+}
+
+.img-desktop-last{
+  margin-bottom: 16px;
+  border-radius: 32px;
 }
 
 .assortment-button {
@@ -31,13 +36,23 @@
   padding: 8px 20px;
   width: 288px;
   height: 40px;
+
+
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+ 
+  line-height: 160%;
+  color: #030a06;
+  background-color: transparent;
 }
+
 .assortment-card-bag {
   width: 288px;
-  height: 530px;
   min-width: 200px;
 }
-.assortment-card-bag p {
+
+.assortment-card-text{
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -46,17 +61,20 @@
   line-height: 160%;
   text-align: center;
   color: #030a06;
+  margin-bottom: 8px;
+  max-width: 288px;
 }
-
-.assortment-card-bag h3 {
+.assortment-card-text-extra{
   font-family: 'Fira Sans', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 14px;
 
-  /* line-height: 29px; */
+  /* line-height: 22px; */
   line-height: 160%;
   text-align: center;
   color: #030a06;
+  margin-bottom: 8px;
+  max-width: 240px;
 }
 
 .assortment-card-title {
@@ -69,7 +87,7 @@
   text-align: center;
   color: #030a06;
 }
-data {
+.assortment-price {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -78,6 +96,7 @@ data {
   line-height: 160%;
   text-align: center;
   color: #030a06;
+
 }
 
 .assortment-goods-bag {
@@ -86,16 +105,21 @@ data {
   gap: 40px;
 }
 
-.text {
-  margin-top: 16px;
+.text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-bottom: 16px;
 }
 
-.assortment-price {
-  margin-top: 8px;
-}
-
 @media screen and (min-width: 768px) {
+  .img-desktop-last{
+    width: 340px;
+    margin-bottom: 16px;
+    border-radius: 32px;
+  }
+
   .assortment {
     padding: 64px 0;
   }
@@ -105,20 +129,17 @@ data {
   .assortment-goods-bag {
     display: flex;
     flex-wrap: wrap;
-    gap: 68px 24px;
+    gap: 48px 24px;
     list-style: none;
+  }
+  .assortment-price-extra{
+    margin-bottom: 22px;
   }
   .assortment-card-bag {
     text-align: center;
-    width: 340px;
-    height: 593px;
-    min-width: 300px;
+    width: calc((100% - 24px) / 2);
   }
-
-  .assortment-title {
-    padding-bottom: 32px;
-  }
-
+  
   .assortment-title {
     font-family: 'Comfortaa', sans-serif;
     font-weight: 700;
@@ -128,13 +149,9 @@ data {
     letter-spacing: 0.01em;
     text-align: center;
     color: #030a06;
+    margin-bottom: 32px;
   }
-  .text {
-    width: 340px;
-    height: 113px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
+
 
   .assortment-button {
     border: 1px solid #030a06;
@@ -142,6 +159,14 @@ data {
     padding: 8px 20px;
     width: 340px;
     height: 40px;
+
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  
+  /* line-height: 26px; */ 
+    line-height: 160%;
+    color: #030a06;
   }
   .assortment-button:hover,
   .assortment-button:focus {
@@ -149,18 +174,25 @@ data {
     border: 1px solid #030a06;
     transition: 0.3s;
   }
-  .assortment-card-bag img {
+  .img-desktop {
     border-radius: 32px;
     width: 340px;
-    height: 408px;
+  
     display: block;
   }
-  .assortment-price {
-    margin-top: 8px;
+
+  .assortment-card-text{
+  max-width: 340px;
   }
+
 }
 
 @media screen and (min-width: 1440px) {
+  .img-desktop-last{
+    margin-bottom: 27px;
+    border-radius: 32px;
+  }
+
   data {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 600;
@@ -189,6 +221,7 @@ data {
     letter-spacing: 0.01em;
     text-align: center;
     color: #030a06;
+    margin-bottom: 32px;
   }
 
   .assortment-goods-bag {
@@ -200,25 +233,11 @@ data {
 
   .assortment-card-bag {
     text-align: center;
-    width: 310px;
+    width: calc((100% - 72px) / 4);
   }
-
-  .text {
-    width: 310px;
-    height: 113px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
-
-  .assortment-card-bag p {
-    max-width: 310px;
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 400;
-
-    line-height: 160%;
-    text-align: center;
-    color: #030a06;
-  }
+  .assortment-card-urban {
+  max-width: 280px;
+  } 
 
   .assortment-card-title {
     font-family: 'Fira Sans', sans-serif;
@@ -229,23 +248,24 @@ data {
     color: #030a06;
   }
 
-  .assortment-price {
-    margin-top: 8px;
-  }
-
-  .assortment-card-bag img {
+  .img-desktop {
     border-radius: 32px;
     display: block;
   }
 
   .assortment-button {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
     border: 1px solid #030a06;
     border-radius: 6px;
     padding: 8px 20px;
-    width: 100%;
+    width: 310px;
     height: 40px;
-    background: transparent;
-    cursor: pointer;
+    
+    line-height: 160%;
+    color: #030a06;
   }
 
   .assortment-button:hover,
@@ -253,5 +273,8 @@ data {
     background-color: #d7f2db;
     border: 1px solid #030a06;
     transition: 0.3s;
+  }
+  .assortment-div-text{
+    margin-bottom: 27px;
   }
 }
