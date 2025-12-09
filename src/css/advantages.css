@@ -5,6 +5,7 @@
 .advantages-container {
   display: flex;
   flex-direction: column;
+  max-width: 288px;
 }
 
 .advantages-block-text {
@@ -66,16 +67,11 @@
 
 @media screen and (min-width: 768px) {
   .advantages {
-    padding: 0 32px;
-  }
+    padding: 64px 32px;
+  }  
 
-  .container {
-    max-width: 768px;
-  }
-
-  .advantages-container {
-    padding: 64px 0;
-    max-width: 768px;
+  .advantages-container {    
+    max-width: 704px;
   }
 
   .advantages-subtitle {
@@ -139,12 +135,11 @@
   }
 
   .advantages-container {
-    max-width: 1440px;
+    max-width: 1312px;
   }
 
   .advantages {
-    padding-left: 64px;
-    padding-right: 64px;
+    padding: 64px 64px;
   }
 
   .advantages-title {

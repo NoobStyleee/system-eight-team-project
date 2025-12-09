@@ -3,7 +3,9 @@
   padding-bottom: 64px;
   background-color: #ebf8ed;
 }
-
+.hero .container {
+  max-width: 288px;
+}
 .hero-wrapper {
   display: flex;
   flex-direction: column;
@@ -94,14 +96,19 @@
     width: 704px;
     height: 267px;
   }
+    .hero .container {
+      max-width: 704px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
   .hero {
     padding-top: 104px;
   }
-  .hero-wrapper {
-    max-width: 1312px;
+    .hero .container {
+      max-width: 1312px;
+    }
+  .hero-wrapper {    
     height: 201px;
   }
 

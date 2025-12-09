@@ -1,6 +1,6 @@
 .gallery {
   background-color: #ebf8ed;
-  padding: 32px 0 32px;
+  padding: 32px 16px;
 }
 
 .gallery-htwo {
@@ -29,7 +29,7 @@
   margin-bottom: 32px;
 }
 
-.container {
+.gallery .container {
   max-width: 320px;
 }
 
@@ -50,9 +50,9 @@
 
 @media screen and (min-width: 768px) {
   .gallery {
-    padding: 64px 0 64px;
+    padding: 64px 32px;
   }
-  .container {
+    .gallery .container {
     max-width: 768px;
   }
 
@@ -91,11 +91,14 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .gallery {
+    padding: 64px 64px;
+  }
   .gallery-htwo {
     font-size: 48px;
   }
-  .container {
-    max-width: 1440px;
+    .gallery .container {
+    max-width: 1312px;
   }
   .gallery-img-first img,
   .gallery-img-second img {

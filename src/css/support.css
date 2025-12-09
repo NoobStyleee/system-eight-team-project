@@ -1,10 +1,10 @@
 .support {
   background-color: #ebf8ed;
-  padding: 32px 0 32px;
+  padding: 32px 16px;
 }
 
 .support .container {
-  max-width: 320px;
+  max-width: 288px;
 }
 
 .form-wrapper {
@@ -137,11 +137,10 @@
 
 @media only screen and (min-width: 768px) {
   .support {
-    padding: 64px 0 64px;
+    padding: 64px 32px;
   }
   .support .container {
-    max-width: 768px;
-    padding: 0 32px;
+    max-width: 704px;    
     display: block;
     margin: 0 auto;
     width: 100%;
@@ -177,12 +176,12 @@
 
 @media only screen and (min-width: 1440px) {
   .support {
-    padding: 64px 0 64px;
+    padding: 64px 64px;
   }
   .support .container {
-    max-width: 1440px;
+    max-width: 1312px;
     width: 100%;
-    padding: 0 64px;
+    
   }
 
   .support-wrapper {

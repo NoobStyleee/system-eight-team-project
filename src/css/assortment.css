@@ -1,12 +1,7 @@
 .assortment {
   background-color: #ebf8ed;
-  padding: 0 16px;
+  padding: 32px 16px;  
 }
-
-.assortment-conteiner {
-  padding: 32px 0;
-}
-
 .assortment-title {
   font-family: 'Comfortaa', sans-serif;
   font-weight: 700;
@@ -24,40 +19,31 @@
   width: 288px;
   margin-bottom: 16px;
 }
-
 .img-desktop-last{
   margin-bottom: 16px;
   border-radius: 32px;
 }
-
 .assortment-button {
   border: 1px solid #030a06;
   border-radius: 6px;
   padding: 8px 20px;
   width: 288px;
   height: 40px;
-
-
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
-  font-size: 16px;
- 
+  font-size: 16px; 
   line-height: 160%;
   color: #030a06;
   background-color: transparent;
 }
-
 .assortment-card-bag {
   width: 288px;
   min-width: 200px;
 }
-
 .assortment-card-text{
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
-  font-size: 14px;
-
-  /* line-height: 22px; */
+  font-size: 14px;  
   line-height: 160%;
   text-align: center;
   color: #030a06;
@@ -67,22 +53,17 @@
 .assortment-card-text-extra{
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
-  font-size: 14px;
-
-  /* line-height: 22px; */
+  font-size: 14px;  
   line-height: 160%;
   text-align: center;
   color: #030a06;
   margin-bottom: 8px;
   max-width: 240px;
 }
-
 .assortment-card-title {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 600;
-  font-size: 18px;
-
-  /* line-height: 29px; */
+  font-size: 18px;  
   line-height: 160%;
   text-align: center;
   color: #030a06;
@@ -90,21 +71,16 @@
 .assortment-price {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 600;
-  font-size: 20px;
-
-  /* line-height: 32px; */
+  font-size: 20px; 
   line-height: 160%;
   text-align: center;
   color: #030a06;
-
 }
-
 .assortment-goods-bag {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
 }
-
 .text{
   display: flex;
   justify-content: center;
@@ -112,20 +88,15 @@
   flex-direction: column;
   margin-bottom: 16px;
 }
-
 @media screen and (min-width: 768px) {
   .img-desktop-last{
     width: 340px;
     margin-bottom: 16px;
     border-radius: 32px;
   }
-
   .assortment {
-    padding: 64px 0;
-  }
-  .assortment-conteiner {
-    padding: 0 32px;
-  }
+    padding: 64px 32px;
+  }  
   .assortment-goods-bag {
     display: flex;
     flex-wrap: wrap;
@@ -138,8 +109,7 @@
   .assortment-card-bag {
     text-align: center;
     width: calc((100% - 24px) / 2);
-  }
-  
+  }  
   .assortment-title {
     font-family: 'Comfortaa', sans-serif;
     font-weight: 700;
@@ -151,20 +121,15 @@
     color: #030a06;
     margin-bottom: 32px;
   }
-
-
   .assortment-button {
     border: 1px solid #030a06;
     border-radius: 6px;
     padding: 8px 20px;
     width: 340px;
     height: 40px;
-
     font-family: "Fira Sans", sans-serif;
     font-weight: 400;
-    font-size: 16px;
-  
-  /* line-height: 26px; */ 
+    font-size: 16px;    
     line-height: 160%;
     color: #030a06;
   }
@@ -176,61 +141,46 @@
   }
   .img-desktop {
     border-radius: 32px;
-    width: 340px;
-  
+    width: 340px;  
     display: block;
   }
-
   .assortment-card-text{
   max-width: 340px;
   }
-
 }
-
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) {  
   .img-desktop-last{
     margin-bottom: 27px;
     border-radius: 32px;
   }
-
   data {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 600;
     font-size: 20px;
-
     line-height: 160%;
     text-align: center;
     color: #030a06;
   }
-
-  .assortment-conteiner {
-    padding: 64px 0;
-  }
-
   .assortment {
-    padding: 0 64px;
+    padding: 64px 64px;
     background-color: #ebf8ed;
   }
-
   .assortment-title {
     font-family: 'Comfortaa', sans-serif;
     font-weight: 700;
     font-size: 48px;
-
     line-height: 120%;
     letter-spacing: 0.01em;
     text-align: center;
     color: #030a06;
     margin-bottom: 32px;
   }
-
   .assortment-goods-bag {
     display: flex;
     flex-wrap: wrap;
     gap: 64px 24px;
     list-style: none;
   }
-
   .assortment-card-bag {
     text-align: center;
     width: calc((100% - 72px) / 4);
@@ -238,36 +188,29 @@
   .assortment-card-urban {
   max-width: 280px;
   } 
-
   .assortment-card-title {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 600;
-
     line-height: 160%;
     text-align: center;
     color: #030a06;
   }
-
   .img-desktop {
     border-radius: 32px;
     display: block;
   }
-
   .assortment-button {
     font-family: "Fira Sans", sans-serif;
     font-weight: 400;
     font-size: 16px;
-
     border: 1px solid #030a06;
     border-radius: 6px;
     padding: 8px 20px;
-    width: 310px;
-    height: 40px;
-    
+    max-width: 310px;
+    height: 40px;    
     line-height: 160%;
     color: #030a06;
   }
-
   .assortment-button:hover,
   .assortment-button:focus {
     background-color: #d7f2db;

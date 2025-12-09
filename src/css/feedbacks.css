@@ -1,6 +1,5 @@
 .feedbacks {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px 16px;
     background-color: #ebf8ed;
 }
 
@@ -24,13 +23,10 @@
     gap: 40px;
     max-width: 1300px;
 }
-
-.review-item {
-    min-width: 310px;
-}
-
-.star-icon {
+.star {
     margin-bottom: 24px;
+}
+.star-icon {    
     width: 20px;
     height: 20px;
     fill: #3AC04C;
@@ -67,15 +63,8 @@
 @media screen and (min-width: 768px) {
 
     .feedbacks {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-
-    .feedbacks 
-    .container {
-        padding-bottom: 64px;
-        padding-top: 64px;
-    }
+        padding: 64px 32px;
+    }   
 
     .reviews-list {
         grid-template-columns: repeat(2, 1fr);
@@ -99,17 +88,9 @@
 /* десктоп */
 @media screen and (min-width: 1440px) {
 
-    .feedbacks 
-    .container {
-        padding-bottom: 64px;
-        padding-top: 64px;
-    }
-
     .feedbacks {
-        padding-left: 64px;
-        padding-right: 64px;
-    }
-
+        padding: 64px 64px;
+    }    
     .reviews-list {
         display: flex;
         gap: 24px;
