@@ -1,12 +1,10 @@
 .advantages {
   background-color: #ebf8ed;
-  padding: 0 16px;
+  padding: 32px 16px;
 }
 .advantages-container {
   display: flex;
   flex-direction: column;
-
-  padding: 32px 0;
 }
 
 .advantages-block-text {
