@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 128px;
+  padding-top: 64px;
   padding-bottom: 64px;
   background-color: #ebf8ed;
 }
@@ -58,7 +58,7 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    padding-top: 96px;
+    padding-top: 32px;
   }
 
   .hero-text {
@@ -97,9 +97,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .hero {
-    padding-top: 104px;
-  }
   .hero-wrapper {
     max-width: 1312px;
     height: 201px;
